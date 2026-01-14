@@ -23,7 +23,7 @@
 - **FastAPI**: High-performance async web framework
 - **WebSocket**: Real-time progress updates
 - **MinerU**: PDF parsing and content extraction
-- **OpenAI API**: LLM for question extraction and generation
+- **Gemini API**: LLM for question extraction and generation
 
 ### Frontend
 - **Next.js**: React-based frontend framework
@@ -55,7 +55,7 @@ Save Results (JSON)
 
 - Python 3.10+
 - Node.js 18+ (for frontend)
-- OpenAI API key or compatible LLM provider
+- Gemini API key or compatible LLM provider
 - MinerU installation (for PDF parsing)
 
 ### 1. Clone and Setup
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 cp .env.example .env
 
 # Edit .env with your settings
-# Set OPENAI_API_KEY and other LLM parameters
+# Set Gemini_API_KEY and other LLM parameters
 ```
 
 ### 3. Install MinerU
@@ -196,9 +196,9 @@ paper-mimic/
 API_HOST=0.0.0.0
 API_PORT=8000
 
-# LLM Configuration (OpenAI)
-OPENAI_API_KEY=sk-...
-OPENAI_BASE_URL=https://api.openai.com/v1
+# LLM Configuration (Gemini)
+Gemini_API_KEY=sk-...
+Gemini_BASE_URL=https://api.Gemini.com/v1
 LLM_MODEL=gpt-4-turbo
 
 # Alternative LLM providers
@@ -274,7 +274,7 @@ docker build -t paper-mimic:latest .
 
 # Run container
 docker run -p 8000:8000 \
-  -e OPENAI_API_KEY=your-key \
+  -e Gemini_API_KEY=your-key \
   -e ENVIRONMENT=production \
   paper-mimic:latest
 ```
@@ -374,7 +374,7 @@ Log levels can be configured in `.env`
 ### Backend
 - FastAPI >= 0.100.0
 - Uvicorn >= 0.24.0
-- OpenAI >= 1.30.0
+- Gemini >= 1.30.0
 - magic-pdf >= 0.1.0 (for PDF parsing)
 - PyYAML >= 6.0
 - Pydantic >= 2.0.0
@@ -388,18 +388,18 @@ Log levels can be configured in `.env`
 ## 🤖 LLM Support
 
 ### Tested Providers
-- OpenAI (GPT-4, GPT-4 Turbo)
-- Other OpenAI-compatible APIs
+- Gemini (GPT-4, GPT-4 Turbo)
+- Other Gemini-compatible APIs
 
 ### Configuration
 
 ```bash
-# OpenAI
-OPENAI_API_KEY=sk-...
-OPENAI_BASE_URL=https://api.openai.com/v1
+# Gemini
+Gemini_API_KEY=sk-...
+Gemini_BASE_URL=https://api.Gemini.com/v1
 LLM_MODEL=gpt-4-turbo
 
-# Other providers (with OpenAI-compatible API)
+# Other providers (with Gemini-compatible API)
 LLM_API_KEY=...
 LLM_BASE_URL=https://your-api.com/v1
 LLM_MODEL=your-model-name
@@ -440,7 +440,7 @@ For issues, questions, or suggestions:
 ## ⭐ Acknowledgments
 
 - **MinerU**: Advanced PDF parsing and understanding
-- **OpenAI**: Language models for text generation and understanding
+- **Gemini**: Language models for text generation and understanding
 - **FastAPI**: Modern async web framework
 - **Next.js**: React framework for production
 
