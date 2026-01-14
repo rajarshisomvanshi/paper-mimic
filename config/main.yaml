@@ -1,0 +1,15 @@
+# Paper Mimic - Configuration
+
+# Paths configuration
+paths:
+  user_log_dir: "data/logs"
+
+# Logging configuration
+logging:
+  level: "INFO"
+  log_dir: "data/logs"
+
+# Question generation settings
+question:
+  max_parallel_questions: 3
+  max_rounds: 10

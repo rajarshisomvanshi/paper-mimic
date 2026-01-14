@@ -1,0 +1,12 @@
+{
+  "paper_name": "test",
+  "extraction_time": "2026-01-14T02:14:32.396446",
+  "total_questions": 1,
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "What is the capital of France?\nA. London\nB. Paris\nC. Berlin",
+      "images": []
+    }
+  ]
+}

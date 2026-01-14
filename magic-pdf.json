@@ -1,0 +1,17 @@
+{
+    "bucket_info": {
+        "bucket-name": "bucket",
+        "access-key": "ak",
+        "secret-key": "sk",
+        "endpoint": "http://oss.com"
+    },
+    "models-dir": "C:/Users/rajar/magic-pdf-models",
+    "device-mode": "cpu",
+    "layout-config": {
+        "model": "doclayout_yolo"
+    },
+    "formula-config": {
+        "mfd_model": "yolo_v8_mfd",
+        "mfr_model": "unimernet_small"
+    }
+}
